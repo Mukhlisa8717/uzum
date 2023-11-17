@@ -1,0 +1,114 @@
+@import '../../../global';
+
+.technique{
+    width: 1300px;
+    height: 550px;
+    margin: 50px auto 0;
+    &__text{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        &-title{
+            font-family: $font;
+            font-size: 32px;
+        }
+        .fa-chevron-right{
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    &__cont{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
+        height: 90%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .technique__cont > div{
+        width: 230px;
+        height: 441px;
+        border-radius: 10px;
+        position: relative;
+        .technique__item-img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .fa-heart{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .technique__item-text{
+            font-family: $font;
+            position: absolute;
+            background-color: #FFFF00;
+            border-radius: 5px;
+            color: #3B007D;
+            top: 283px;
+            left: 0;
+        }
+        .technique__item-title{
+            font-family: $font;
+            font-size: 14px;
+        }
+        .technique__item-rating{
+            display: flex;
+            width: 50%;
+            height: 4%;
+            justify-content: space-around;
+            align-items: center;
+            .fa-star{
+                color: #F5A623;
+                font-size: 12px;
+            }
+            .technique__rating{
+                font-size: 12px;
+                color: #8A8F9D;
+            }
+        }
+        .technique__text{
+            display: flex;
+            background-color: #FFFF00;
+            width: 40%;
+            height: 5%;
+            border-radius: 5px;
+            font-size: 11px;
+            justify-content: center;
+            font-family: $font;
+            border: none;
+            margin-top: 3px;
+        }
+        .technique__old-price{
+            font-family: $font;
+            text-decoration: line-through;
+            color: #757575;
+            margin-top: 12px;
+        }
+        .technique__price{
+            font-family: $font;
+        }
+        .fa-basket-shopping{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .fa-basket-shopping:hover{
+            background: #EFEFEF;
+        }
+    }
+}
+
+@media screen and (max-width: 415px){
+    .technique{
+        display: none;
+    }
+}
